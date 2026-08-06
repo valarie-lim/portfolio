@@ -1,0 +1,115 @@
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px 0.5px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  background: linear-gradient(to right, white, var(--accent-bg));
+
+  .card-header {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+  .left-column {
+    flex: 1;
+    text-align: left;
+    span {
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 2rem;
+      line-height: 2;
+    }
+    button {
+      background: var(--accent);
+      color: white;
+      transition:
+        background 0.3s,
+        color 0.3s;
+      margin-left: 5px;
+
+      &:hover {
+        background: var(--accent-hover);
+        border: 2px solid var(--accent);
+        color: var(--accent);
+      }
+    }
+  }
+  .right-column {
+    flex: 1;
+    padding: 1rem;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.tech-stack-pill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  cursor: crosshair;
+
+  p {
+    padding: 5px;
+    margin: 0;
+    background-color: var(--btn-bg);
+    border-radius: 50px;
+    border: 1px solid var(--accent-border);
+    text-align: center;
+    font-weight: 600;
+
+    &:hover {
+      background-color: hsl(0, 0%, 20%);
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-card {
+    .tech-stack-pill {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .left-column,
+    .right-column {
+      padding: 0 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-card {
+    .tech-stack-pill {
+      grid-template-columns: 1fr;
+    }
+  }
+}

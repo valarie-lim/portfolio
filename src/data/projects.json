@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/p01-sunday-school-management-system.png",
+    "name": "⛪ Sunday School Management System (CAPSTONE PROJECT)",
+    "type": "Full-Stack Web Application",
+    "desc": "A cloud-hosted management system developed to streamline student and teacher management, attendance tracking, and report generation. Built with security and role-based access control to ensure reliable data management.",
+    "stack": ["ASP.NET", "SQL Server", "VB.NET", "myASP.NET", "MonsterASP.NET"],
+    "highlights": [
+      "Role-Based Access Control",
+      "Attendance Management",
+      "PDF Report Generation",
+      "Password Hashing",
+      "SQL Injection Prevention"
+    ],
+    "demo": "https://bem-sun-sch.runasp.net/",
+    "github": "https://github.com/valarie-lim/sunday-school-management-system"
+  },
+  {
+    "id": 2,
+    "image": "/assets/p02-internet-banking-system.png",
+    "name": "🏦 CKV Bank Internet Banking System",
+    "type": "Full-Stack Web Application",
+    "desc": "Team-developed online banking platform built with RAD principles and independently upgraded with live transfers, payments, reporting, and cloud hosting.",
+    "stack": ["ASP.NET", "SQL Server", "VB.NET", "MS Azure", "MonsterASP.NET"],
+    "highlights": [
+      "Auth & Security: SHA-256 hashing, account lockout, email password reset, and SQL injection prevention.",
+      "Core Functionality: End-to-end registration, fund transfers, bill payments, and transaction records.",
+      "Production Deployment: Live on MonsterASP.NET with full HTTPS/SSL configuration."
+    ],
+    "demo": "https://ckvsystem.runasp.net/",
+    "github": "https://github.com/valarie-lim/internet-banking-system"
+  },
+
+  {
+    "id": 3,
+    "image": "/assets/p04-restaurant-nextjs-business-website.png",
+    "name": "🍽 Sampan House Business Website",
+    "type": "CMS-Powered Business Website",
+    "desc": "An independently developed website created as a freelance proposal to demonstrate how a modern digital presence can improve customer enquiries and event bookings for a local restaurant.",
+    "stack": ["Next.js", "React", "Vercel", "Decap CMS", "Vanilla CSS"],
+    "highlights": [
+      "Dynamic Menu Management: Integrated Decap CMS enabling client-side PDF menu updates.",
+      "Customer Engagement: Built-in WhatsApp Enquiry Forms, Social Media, Google Review, and Google Maps.",
+      "Responsive Architecture & SEO: Mobile-optimized component structure engineered for speed and search visibility."
+    ],
+    "demo": "https://sampan-house.vercel.app/",
+    "github": "https://github.com/valarie-lim/sampan.house"
+  },
+  {
+    "id": 4,
+    "image": "/assets/p03-restaurant-business-website.png",
+    "name": "🍴 MY Restaurant Enquiry Business Website",
+    "type": "Static Website with Form",
+    "desc": "A responsive restaurant website developed using HTML5, Vanilla CSS, and JavaScript for an Internet Technologies group project.",
+    "stack": ["HTML5", "Vanilla CSS", "JavaScript"],
+    "highlights": [
+      "Responsive Design",
+      "Multi-page Website",
+      "Mobile Drawer Navigation",
+      "CSS Grid & Flex Layout",
+      "Event Hosting Inquiry Form"
+    ],
+    "demo": "https://valarie-lim.github.io/my-restaurant/",
+    "github": "https://github.com/valarie-lim/my-restaurant"
+  }
+]

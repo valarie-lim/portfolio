@@ -1,0 +1,136 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0 solid hsla(0, 0%, 0%, 0.05);
+  border-radius: 10px;
+  height: 100vh;
+  margin: 0;
+  gap: 1.5rem;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.hero-left,
+.hero-right {
+  flex: 1;
+}
+
+.hero-left {
+  width: 100%;
+  img {
+    width: 100%;
+    border-radius: 250px;
+    cursor: crosshair;
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.hero-right {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+
+  h1,
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    line-height: 0;
+    font-size: 1.8rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--accent);
+  }
+  span {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-links li {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 5px;
+  list-style: none;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--social-bg);
+    color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    .hero-right {
+      h1 span {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .hero-container {
+    height: auto;
+    flex-direction: column;
+
+    .hero-left {
+      width: 70%;
+      img {
+        margin-top: 4rem;
+      }
+    }
+    .hero-right {
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
