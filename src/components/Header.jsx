@@ -33,7 +33,9 @@ function Header() {
   return (
     <header id="header" className={isScrolled ? "scrolled" : ""}>
       <div className="nav-container">
-        <h1 className="logo">VLYH</h1>
+        <a href="#" className="logo">
+          VLYH
+        </a>
 
         {/*Mobile Hamburger Icon */}
         <button className="burger-icon" onClick={toggleMenu} aria-label="Toggle Menu">

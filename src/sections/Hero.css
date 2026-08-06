@@ -8,7 +8,7 @@
   height: 100vh;
   margin: 0;
   gap: 1.5rem;
-  padding: 3rem;
+  padding: 3rem 1rem;
   margin-top: 3rem;
 }
 
@@ -51,7 +51,7 @@
     letter-spacing: 0.02em;
     font-weight: bold;
     text-transform: capitalize;
-    color: var(--accent);
+    color: var(--theme-dark);
   }
   span {
     font-size: 4rem;
@@ -74,7 +74,7 @@
   width: 100%;
   height: auto;
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-dark);
   font-size: 2rem;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -85,14 +85,12 @@
   border-radius: 50px;
   padding: 5px;
   list-style: none;
-  transition:
-    transform 0.3s ease,
-    color 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
     background-color: var(--social-bg);
-    color: white;
+    color: var(--theme-light);
   }
 }
 
@@ -121,8 +119,13 @@
       text-align: center;
       margin: 0 auto;
 
+      h1 span {
+        font-size: 2.3rem;
+        line-height: 1.75;
+      }
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
       }
 
       .btn-container {

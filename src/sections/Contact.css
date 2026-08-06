@@ -4,16 +4,16 @@
     padding-right: 1.5rem;
 
     .contact-card {
-      background-color: var(--btn-bg);
+      background-color: var(--theme-light);
       padding: 10px 5px;
       margin: 5% auto;
       border-radius: 10px;
       text-align: left;
-      box-shadow: 2px 4px 8px 0.9px hsla(173, 100%, 60%, 0.2);
+      box-shadow: 2px 4px 8px 0.9px var(--bg-grey);
       transition:
-        transform 0.3s,
-        background-color 0.3s,
-        color 0.5s;
+        transform 0.3s ease-in,
+        background-color 0.3s ease-in,
+        color 0.5s ease;
       width: 100%;
       cursor: pointer;
 
@@ -35,7 +35,7 @@
 
       a {
         text-decoration: none;
-        color: var(--primary);
+        color: var(--text-dark);
       }
 
       i {
@@ -50,7 +50,7 @@
         background-color: transparent;
         i,
         span {
-          color: var(--accent);
+          color: var(--theme-dark);
           transform: translateY(-5px);
         }
       }
@@ -60,6 +60,7 @@
   .column-right {
     flex: 1;
     box-shadow: var(--shadow);
+
     form {
       display: flex;
       flex-direction: column;
@@ -73,7 +74,7 @@
 
       input,
       textarea {
-        border: 2px solid hsla(173, 100%, 60%, 0.5);
+        border: 2px solid var(--theme-light);
         border-radius: 5px;
         background-color: transparent;
         padding: 0.5em 3.25em 0.5em 1.25em;
@@ -86,12 +87,12 @@
         height: 250px;
       }
       button {
-        background-color: var(--accent);
-        color: var(--primary);
+        background-color: var(--theme-dark);
+        color: var(--text-dark);
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: var(--btn-bg);
+          background-color: var(--btn-bg-light);
         }
       }
     }

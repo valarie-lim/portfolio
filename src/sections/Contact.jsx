@@ -4,9 +4,10 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <h3>Have an opportunity in mind?</h3>
+        <h3>Contact</h3>
         <h2>Let's Connect</h2>
         <hr></hr>
+        <p>Have an opportunity in mind? Let's work together.</p>
       </div>
       <div className="two-column-grid">
         <div className="column-left">

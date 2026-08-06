@@ -13,7 +13,7 @@ header {
     background: transparent;
     border: none;
     font-size: 1.8rem;
-    color: var(--text);
+    color: var(--text-dark);
     cursor: pointer;
   }
 
@@ -30,31 +30,47 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--primary);
-    color: var(--text);
+    background-color: var(--theme-light);
+    color: var(--text-dark);
     padding: 0.8rem 2rem;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 5px var(--bg-grey);
     border-radius: 250px;
     box-sizing: border-box;
 
     /* Glassmorphism setup */
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    background: var(--bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0 8px 20px 0 var(--theme-light);
     transition: all 0.4s ease-in-out;
 
     .desktop-resume {
-      background-color: var(--accent);
+      background-color: var(--btn-bg-dark);
       border-radius: 25px;
-      padding: 0.5rem 1.2rem;
-      text-decoration: none;
-      color: var(--text);
-      transition: background 0.3s;
+      border: 1px solid var(--btn-bg-dark);
+      color: var(--text-dark);
+      transition: all 0.5s ease-out;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
 
       &:hover {
-        background: var(--accent-hover);
+        background: var(--bg);
+        border: 1px solid var(--btn-bg-dark);
+      }
+    }
+
+    .logo {
+      text-decoration: none;
+      color: var(--text-h-dark);
+      font-size: 2.5rem;
+      padding: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -66,11 +82,11 @@ header {
     .nav-container {
       padding: 0.5rem 1.5rem;
       background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 20px var(bg-grey);
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -78,7 +94,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -89,8 +105,9 @@ header {
 
     a {
       text-decoration: none;
-      color: var(--text);
+      color: var(--text-dark);
       font-size: 1rem;
+      letter-spacing: 0.05rem;
       border-bottom: 3px solid transparent;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
@@ -99,8 +116,8 @@ header {
       &.active {
         font-weight: 600;
         padding-bottom: 5px;
-        border-bottom: 3px solid var(--accent);
-        color: var(--accent);
+        border-bottom: 3px solid var(--btn-bg-dark);
+        color: var(--btn-bg-dark);
       }
     }
   }
@@ -139,20 +156,19 @@ header {
 
   /* Mobile Drawer Setup */
   .nav-links {
-    /* display: flex; */
     position: fixed;
     top: 0;
     right: -100%;
     width: 250px;
     height: 100vh;
-    background: var(--bg-translucent);
+    background: var(--bg);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    box-shadow: 5px 0 15px hsl(0, 0, 0, 0.2);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     transition: right 0.4s ease-in-out;
     z-index: 1001;
 
@@ -166,22 +182,17 @@ header {
     }
     li a {
       display: block;
-      color: var(--text, hsla(0, 0%, 7%, 0.2));
+      color: var(--text-dark);
       font-size: 1.1rem;
       border-bottom: none;
       padding: 0.5rem 1rem;
       text-decoration: none;
 
-      &:hover {
-        color: var(--accent);
-        background: var(--accent-hover);
-      }
-
       &.active {
         font-weight: bold;
         border-bottom: none;
-        color: var(--accent);
-        background: var(--accent-hover);
+        color: var(--text-dark);
+        background: var(--theme-light);
       }
     }
 
@@ -190,8 +201,8 @@ header {
       margin-top: 1rem;
 
       a.btn {
-        background: var(--accent);
-        color: var(--text);
+        background: var(--btn-bg-dark);
+        color: var(--text-dark);
         padding: 0.6rem 1.8rem;
         border-radius: 25px;
         display: inline-block;

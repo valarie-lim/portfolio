@@ -1,5 +1,5 @@
 #backToTop {
-  background-color: var(--accent);
+  background-color: var(--theme-dark);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -23,12 +23,12 @@
     visibility: visible;
   }
   &:hover {
-    background-color: var(--btn-bg);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--btn-bg-light);
+    box-shadow: 0 0 5px var(--bg-grey);
   }
   i {
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--text-dark);
   }
 }
 

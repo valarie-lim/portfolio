@@ -13,28 +13,26 @@
     }
   }
   .about-card-list {
-    background-color: var(--btn-bg);
+    background-color: var(--btn-bg-light);
     text-align: center;
     width: 100%;
     padding: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.5s ease-in;
     cursor: crosshair;
 
     &:hover {
-      background-color: hsl(173, 100%, 95%, 0.5);
+      background-color: var(--bg);
       transform: translateY(-5px);
       box-shadow: var(--shadow);
     }
   }
   .column-right {
-    transition:
-      background-color 0.3s,
-      transform 0.5s;
+    transition: all 0.5s ease-in;
 
     &:hover {
-      background-color: hsl(173, 100%, 95%, 1);
+      background-color: var(--btn-bg-light);
       transform: scale(1.1);
     }
   }

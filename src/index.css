@@ -1,16 +1,16 @@
 :root {
-  --text: hsl(173, 0%, 30%);
-  --text-h: hsl(173, 0%, 3%);
+  --theme-light: hsl(173, 100%, 82%);
+  --theme-dark: hsla(173, 80%, 50%);
   --bg: hsl(0, 0%, 99%);
-  --bg-translucent: hsl(0, 0%, 95%, 0.9);
-  --border: hsla(173, 80%, 50%);
-  --code-bg: hsla(173, 80%, 50%);
-  --accent: hsl(173, 80%, 50%);
-  --accent-bg: hsla(173, 80%, 50%, 0.1);
-  --accent-border: hsla(173, 80%, 50%, 0.5);
-  --social-bg: hsla(173, 80%, 50%, 0.1);
+  --bg-grey: hsl(0, 0%, 94%);
+  --text-light: hsl(0, 0%, 97%);
+  --text-dark: hsl(0, 0%, 30%);
+  --social-bg: hsl(173, 90%, 80%);
+  --text-h-light: hsl(0, 0%, 97%);
+  --text-h-dark: hsl(0, 0%, 3%);
+  --btn-bg-light: hsl(173, 95%, 90%);
+  --btn-bg-dark: hsl(173, 90%, 45%);
   --shadow: hsla(173, 80%, 50%, 0.5) 0 4px 15px 0.5px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-  --btn-bg: hsl(173, 100%, 90%, 0.9);
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
@@ -25,10 +25,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* @media (max-width: 1024px) {
-    font-size: 16px;
-  } */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,7 +55,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 0 solid var(--border);
+  border-inline: 0 solid var(--theme-dark);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -68,7 +64,7 @@ body {
 }
 hr {
   width: 5rem;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--theme-dark);
   @media (max-width: 1024px) {
     width: 3rem;
   }
@@ -77,8 +73,8 @@ hr {
 h1,
 h2 {
   font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+  font-weight: 700;
+  color: var(--text-h-dark);
 }
 
 h1 {
@@ -89,7 +85,7 @@ h1 {
 h2 {
   font-size: clamp(1.25rem, 0.875rem + 1.67vw, 2rem);
   line-height: 118%;
-  letter-spacing: -0.24px;
+  letter-spacing: 0.24px;
   margin: 0 0 8px;
   text-transform: uppercase;
 }
@@ -132,23 +128,41 @@ p {
   margin-top: 1rem;
   gap: 1rem;
 
-  a {
-    text-decoration: none;
-    background: var(--btn-bg);
-    transition: background-color 0.3s;
-    color: var(--primary);
-    transition: transform 0.3s;
+  .btn-primary {
+    background-color: var(--btn-bg-dark);
 
     &:hover {
-      transform: translateY(-3px);
+      background-color: var(--btn-bg-light);
     }
   }
-  .btn-primary {
-    background-color: var(--accent);
+}
 
-    &:hover {
-      background-color: var(--accent-bg);
-    }
+.btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--theme-light);
+  transition: all 0.3s;
+  color: var(--text-dark);
+
+  &:hover {
+    background: var(--bg);
+    border-color: var(--btn-bg-dark);
+    transform: translateY(-3px);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--btn-bg-dark);
+    outline-offset: 2px;
+  }
+}
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
   }
 }
 
