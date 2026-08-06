@@ -82,7 +82,7 @@ header {
     .nav-container {
       padding: 0.5rem 1.5rem;
       background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 10px 20px var(bg-grey);
+      box-shadow: 0 10px 20px var(--bg-grey);
     }
 
     .logo {

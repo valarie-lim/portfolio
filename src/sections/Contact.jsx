@@ -1,4 +1,5 @@
 import "./Contact.css";
+import ContactForm from "../components/ContactForm.jsx";
 
 function Contact() {
   return (
@@ -66,17 +67,7 @@ function Contact() {
           </div>
         </div>
         <div className="column-right">
-          <form id="contactForm">
-            <label>Name</label>
-            <input type="text" placeholder="Your name"></input>
-            <label>Email</label>
-            <input type="email" placeholder="your@email.com"></input>
-            <label>Message</label>
-            <textarea placeholder="Tell me about your opportunity..."></textarea>
-            <button type="submit" className="btn">
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
