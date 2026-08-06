@@ -36,20 +36,20 @@ function Projects() {
                   </ul>
                   <div className="btn-container">
                     {project.demo && (
-                      <a href="{project.demo}" className="btn btn-primary">
+                      <a href={project.demo} className="btn btn-primary">
                         Live Demo
                       </a>
                     )}
 
                     {project.github && (
-                      <a href="{project.github}" className="btn btn-primary">
+                      <a href={project.github} className="btn btn-primary">
                         Github
                       </a>
                     )}
                   </div>
                 </div>
                 <div className="right-column">
-                  <img src={project.image} alt="{project.name}" />
+                  <img src={project.image} alt={project.name} />
                 </div>
               </div>
             </div>
