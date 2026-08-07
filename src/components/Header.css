@@ -105,6 +105,10 @@ header {
         color: var(--accent-color);
       }
     }
+
+    li:last-child {
+      display: none;
+    }
   }
 }
 
