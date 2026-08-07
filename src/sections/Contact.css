@@ -4,12 +4,12 @@
     padding-right: 1.5rem;
 
     .contact-card {
-      background-color: var(--theme-light);
+      background-color: var(--primary-color);
       padding: 10px 5px;
       margin: 5% auto;
       border-radius: 10px;
       text-align: left;
-      box-shadow: 2px 4px 8px 0.9px var(--bg-grey);
+      box-shadow: 2px 4px 8px 0.9px var(--base-variant);
       transition:
         transform 0.3s ease-in,
         background-color 0.3s ease-in,
@@ -35,7 +35,7 @@
 
       a {
         text-decoration: none;
-        color: var(--text-dark);
+        color: var(--text-color);
       }
 
       i {
@@ -48,9 +48,11 @@
 
       &:hover {
         background-color: transparent;
+        box-shadow: var(--shadow);
         i,
         span {
-          color: var(--theme-dark);
+          letter-spacing: 0.05rem;
+          color: var(--secondary-text);
           transform: translateY(-5px);
         }
       }

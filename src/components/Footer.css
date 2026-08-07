@@ -4,7 +4,7 @@
   gap: 2rem;
   margin: 2rem auto;
   padding-top: 1rem;
-  border-top: 2px solid var(--theme-dark);
+  border-top: 2px solid var(--accent-color);
 }
 
 .footer-social-links {
@@ -18,7 +18,7 @@
 
 .footer-social-links a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--text-color);
   font-size: 1.5rem;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -36,7 +36,7 @@
 }
 
 .footer-social-links i:hover {
-  color: var(--theme-dark);
+  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {

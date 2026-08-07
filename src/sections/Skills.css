@@ -26,13 +26,14 @@
   .skills-card-pill-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+    margin: 1rem auto;
   }
   p {
-    background-color: var(--btn-bg-light);
-    border: 1px solid var(--theme-light);
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
     width: auto;
     border-radius: 50px;
     padding: 0.5rem 1rem;
@@ -42,7 +43,7 @@
     cursor: crosshair;
 
     &:hover {
-      background-color: var(--bg);
+      background-color: var(--accent-color);
       font-weight: bold;
     }
   }

@@ -1,15 +1,11 @@
 :root {
-  --theme-light: hsl(173, 100%, 82%);
-  --theme-dark: hsla(173, 80%, 50%);
-  --bg: hsl(0, 0%, 99%);
-  --bg-grey: hsl(0, 0%, 94%);
-  --text-light: hsl(0, 0%, 97%);
-  --text-dark: hsl(0, 0%, 30%);
-  --social-bg: hsl(173, 90%, 80%);
-  --text-h-light: hsl(0, 0%, 97%);
-  --text-h-dark: hsl(0, 0%, 3%);
-  --btn-bg-light: hsl(173, 95%, 90%);
-  --btn-bg-dark: hsl(173, 90%, 45%);
+  --base-color: hsl(0, 0%, 99%);
+  --base-color-translucent: hsla(0, 0%, 99%, 0.3);
+  --base-variant: hsl(0, 0%, 94%);
+  --text-color: hsl(0, 0%, 30%);
+  --secondary-text: hsl(0, 0%, 3%);
+  --primary-color: hsl(173, 100%, 82%);
+  --accent-color: hsla(173, 80%, 50%);
   --shadow: hsla(173, 80%, 50%, 0.5) 0 4px 15px 0.5px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
@@ -19,26 +15,35 @@
   font: clamp(0.9375rem, 0.85rem + 0.4vw, 1.125rem)/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--text-color);
+  background: var(--base-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.darkmode {
+  --base-color: #080e18;
+  --base-variant: #0b0f1c;
+  --text-color: #f8f4e9;
+  --secondary-text: hsl(174, 83%, 80%);
+  --primary-color: hsl(173, 80%, 30%);
+  --accent-color: hsla(173, 80%, 50%, 0.9);
+  --shadow: hsla(173, 80%, 50%, 0.5) 0 4px 15px 0.5px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  color: var(--text-color);
+  background: var(--base-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: hsl(173, 80%, 50%);
-    --accent-bg: hsla(173, 80%, 50%, 0.1);
-    --accent-border: hsla(173, 80%, 50%, 0.5);
-    --social-bg: hsla(173, 80%, 50%, 0.1);
-    --shadow: hsla(173, 80%, 50%, 0.5) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    --base-color: hsl(0, 0%, 99%);
+    --base-variant: hsl(0, 0%, 94%);
+    --text-color: hsl(0, 0%, 30%);
+    --secondary-text: hsl(0, 0%, 3%);
+    --primary-color: hsl(173, 100%, 82%);
+    --accent-color: hsla(173, 80%, 50%);
+    --shadow: hsla(173, 80%, 50%, 0.5) 0 4px 15px 0.5px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -55,7 +60,6 @@ body {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 0 solid var(--theme-dark);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -64,7 +68,7 @@ body {
 }
 hr {
   width: 5rem;
-  border: 2px solid var(--theme-dark);
+  border: 2px solid var(--accent-color);
   @media (max-width: 1024px) {
     width: 3rem;
   }
@@ -74,7 +78,7 @@ h1,
 h2 {
   font-family: var(--heading);
   font-weight: 700;
-  color: var(--text-h-dark);
+  color: var(--secondary-text);
 }
 
 h1 {
@@ -127,12 +131,13 @@ p {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  letter-spacing: 0.1rem;
 
   .btn-primary {
-    background-color: var(--btn-bg-dark);
+    background-color: var(--accent-color);
 
     &:hover {
-      background-color: var(--btn-bg-light);
+      background-color: var(--base-color);
     }
   }
 }
@@ -145,17 +150,17 @@ p {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  background: var(--theme-light);
+  background: var(--accent-color);
   transition: all 0.3s;
-  color: var(--text-dark);
+  color: var(--text-color);
 
   &:hover {
-    background: var(--bg);
-    border-color: var(--btn-bg-dark);
+    background: var(--base-variant);
+    border-color: var(--accent-color);
     transform: translateY(-3px);
   }
   &:focus-visible {
-    outline: 2px solid var(--btn-bg-dark);
+    outline: 2px solid var(--accent-color);
     outline-offset: 2px;
   }
 }

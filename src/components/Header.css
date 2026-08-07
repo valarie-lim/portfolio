@@ -7,17 +7,16 @@ header {
   padding: 1rem 2rem;
   box-sizing: border-box;
   transition: all 0.4s ease-in-out;
-
   .burger-icon {
     display: none;
     background: transparent;
     border: none;
     font-size: 1.8rem;
-    color: var(--text-dark);
+    color: var(--secondary-text);
     cursor: pointer;
   }
 
-  .mobile-resume-li {
+  .mobile-theme-switch-li {
     display: none;
   }
   .nav-container {
@@ -30,38 +29,24 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--theme-light);
-    color: var(--text-dark);
+    background-color: var(--base-color);
+    color: var(--text-color);
     padding: 0.8rem 2rem;
-    box-shadow: 0px 4px 5px var(--bg-grey);
+    box-shadow: 0px 4px 5px var(--base-variant);
     border-radius: 250px;
     box-sizing: border-box;
 
     /* Glassmorphism setup */
-    background: var(--bg);
+    border: 1px solid var(--accent-color);
+    background: var(--base-color);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px); /* Safari support */
-    box-shadow: 0 8px 20px 0 var(--theme-light);
+    box-shadow: 0 8px 20px 0 var(--primary-color);
     transition: all 0.4s ease-in-out;
-
-    .desktop-resume {
-      background-color: var(--btn-bg-dark);
-      border-radius: 25px;
-      border: 1px solid var(--btn-bg-dark);
-      color: var(--text-dark);
-      transition: all 0.5s ease-out;
-      font-weight: 600;
-      letter-spacing: 0.05rem;
-
-      &:hover {
-        background: var(--bg);
-        border: 1px solid var(--btn-bg-dark);
-      }
-    }
 
     .logo {
       text-decoration: none;
-      color: var(--text-h-dark);
+      color: var(--secondary-text);
       font-size: 2.5rem;
       padding: 1.5rem;
       font-weight: bold;
@@ -81,8 +66,8 @@ header {
 
     .nav-container {
       padding: 0.5rem 1.5rem;
-      background: rgba(255, 255, 255, 0.25);
-      box-shadow: 0 10px 20px var(--bg-grey);
+      background: var(--base-color);
+      box-shadow: 0 10px 20px var(--base-variant);
     }
 
     .logo {
@@ -105,7 +90,7 @@ header {
 
     a {
       text-decoration: none;
-      color: var(--text-dark);
+      color: var(--text-color);
       font-size: 1rem;
       letter-spacing: 0.05rem;
       border-bottom: 3px solid transparent;
@@ -116,8 +101,8 @@ header {
       &.active {
         font-weight: 600;
         padding-bottom: 5px;
-        border-bottom: 3px solid var(--btn-bg-dark);
-        color: var(--btn-bg-dark);
+        border-bottom: 3px solid var(--accent-color);
+        color: var(--accent-color);
       }
     }
   }
@@ -132,7 +117,7 @@ header {
       z-index: 1002;
     }
 
-    .desktop-resume {
+    .desktop-theme-switch {
       display: none;
     }
 
@@ -161,14 +146,14 @@ header {
     right: -100%;
     width: 250px;
     height: 100vh;
-    background: var(--bg);
+    background: var(--base-color);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px 0 15px var(--base-variant);
     transition: right 0.4s ease-in-out;
     z-index: 1001;
 
@@ -182,7 +167,7 @@ header {
     }
     li a {
       display: block;
-      color: var(--text-dark);
+      color: var(--text-color);
       font-size: 1.1rem;
       border-bottom: none;
       padding: 0.5rem 1rem;
@@ -191,23 +176,16 @@ header {
       &.active {
         font-weight: bold;
         border-bottom: none;
-        color: var(--text-dark);
-        background: var(--theme-light);
+        color: var(--secondary-text);
+        background: var(--base-color);
       }
     }
 
-    .mobile-resume-li {
-      display: block;
-      margin-top: 1rem;
-
-      a.btn {
-        background: var(--btn-bg-dark);
-        color: var(--text-dark);
-        padding: 0.6rem 1.8rem;
-        border-radius: 25px;
-        display: inline-block;
-        border: none;
-      }
+    li:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;
     }
 
     .nav-overlay {
@@ -216,7 +194,7 @@ header {
       right: 100%;
       width: 100vw;
       height: 100vh;
-      background: hsl(0, 0, 0, 0.5);
+      background: var(--base-color-translucent);
       z-index: 1000;
       cursor: pointer;
     }

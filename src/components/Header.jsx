@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
+import ThemeSwitch from "./ThemeSwitch.jsx";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,6 @@ function Header() {
         <a href="#" className="logo">
           VLYH
         </a>
-
         {/*Mobile Hamburger Icon */}
         <button className="burger-icon" onClick={toggleMenu} aria-label="Toggle Menu">
           <i className={isMenuOpen ? "ri-close-line" : "ri-menu-line"}></i>
@@ -44,17 +44,12 @@ function Header() {
 
         {/* Navigation Links(Desktop + Mobile Side Drawer) */}
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          {/*Backdrop overlay when burger menu is open */}
+          {/*Backdrop overlay*/}
           {isMenuOpen && <div className="nav-overlay" onClick={closeMenu}></div>}
 
           <li>
             <a href="#about" onClick={() => handleNavClick("#about")} className={isActive("#about") ? "active" : ""}>
               About
-            </a>
-          </li>
-          <li>
-            <a href="#skills" onClick={() => handleNavClick("#skills")} className={isActive("#skills") ? "active" : ""}>
-              Skills
             </a>
           </li>
           <li>
@@ -64,6 +59,11 @@ function Header() {
               className={isActive("#projects") ? "active" : ""}
             >
               Projects
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => handleNavClick("#skills")} className={isActive("#skills") ? "active" : ""}>
+              Skills
             </a>
           </li>
           <li>
@@ -84,15 +84,13 @@ function Header() {
               Contact
             </a>
           </li>
-          <li className="mobile-resume-li">
-            <a href="#" className="btn">
-              Resume
-            </a>
+          <li>
+            <ThemeSwitch />
           </li>
         </ul>
-        <a href="#" className="btn desktop-resume">
-          Resume
-        </a>
+        <div className="desktop-theme-switch">
+          <ThemeSwitch />
+        </div>
       </div>
     </header>
   );

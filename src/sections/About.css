@@ -13,17 +13,17 @@
     }
   }
   .about-card-list {
-    background-color: var(--btn-bg-light);
+    background-color: var(--primary-color);
     text-align: center;
     width: 100%;
     padding: 10px;
     padding-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.5s ease-in;
     cursor: crosshair;
 
     &:hover {
-      background-color: var(--bg);
+      background-color: var(--base-color);
       transform: translateY(-5px);
       box-shadow: var(--shadow);
     }
@@ -32,7 +32,7 @@
     transition: all 0.5s ease-in;
 
     &:hover {
-      background-color: var(--btn-bg-light);
+      box-shadow: none;
       transform: scale(1.1);
     }
   }

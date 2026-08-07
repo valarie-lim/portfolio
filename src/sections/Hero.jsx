@@ -20,16 +20,10 @@ function Hero() {
             Developer or Software Developer role.
           </p>
           <div className="btn-container">
-            <a href="#projects" className="btn">
+            <a href="#projects" className="btn btn-secondary">
               View Projects
             </a>
-            <a
-              href="https://github.com/valarielyh/your-repo/raw/main/resume.pdf"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-            >
+            <a href="#" className="btn btn-primary" target="_blank" rel="noopener noreferrer" download>
               Download Resume
             </a>
           </div>
