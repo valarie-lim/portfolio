@@ -141,66 +141,66 @@ header {
         font-size: 1.25rem;
       }
     }
-  }
 
-  /* Mobile Drawer Setup */
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100vh;
-    background: var(--base-color);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    box-shadow: -5px 0 15px var(--base-variant);
-    transition: right 0.4s ease-in-out;
-    z-index: 1001;
-
-    &.open {
-      right: 0;
-    }
-
-    li {
-      width: 100%;
-      text-align: center;
-    }
-    li a {
-      display: block;
-      color: var(--text-color);
-      font-size: 1.1rem;
-      border-bottom: none;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-
-      &.active {
-        font-weight: bold;
-        border-bottom: none;
-        color: var(--secondary-text);
-        background: var(--base-color);
-      }
-    }
-
-    li:last-child {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 1rem auto;
-    }
-
-    .nav-overlay {
+    /* Mobile Drawer Setup */
+    .nav-links {
       position: fixed;
       top: 0;
-      right: 100%;
-      width: 100vw;
+      right: -100%;
+      width: 250px;
       height: 100vh;
-      background: var(--base-color-translucent);
-      z-index: 1000;
-      cursor: pointer;
+      background: var(--base-color);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      box-shadow: -5px 0 15px var(--base-variant);
+      transition: right 0.4s ease-in-out;
+      z-index: 1001;
+
+      &.open {
+        right: 0;
+      }
+
+      li {
+        width: 100%;
+        text-align: center;
+      }
+      li a {
+        display: block;
+        color: var(--text-color);
+        font-size: 1.1rem;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+
+        &.active {
+          font-weight: bold;
+          border-bottom: none;
+          color: var(--secondary-text);
+          background: var(--base-color);
+        }
+      }
+
+      li:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+      }
+
+      .nav-overlay {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        width: 100vw;
+        height: 100vh;
+        background: var(--base-color-translucent);
+        z-index: 1000;
+        cursor: pointer;
+      }
     }
   }
 }
