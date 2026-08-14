@@ -3,15 +3,17 @@
   height: 50px;
   padding: 0;
   border-radius: 50%;
-  border: 1px solid var(--text-color);
-  background-color: var(--base-variant);
+  border: 0 solid var(--accent-color);
+  background-color: var(--base-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: fixed;
-  top: 20px;
-  right: 20px; */
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--base-variant);
+    transition: scale(1.1);
+  }
 }
 
 #theme-switch svg {

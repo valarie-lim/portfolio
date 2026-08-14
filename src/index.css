@@ -24,8 +24,9 @@
 }
 
 .darkmode {
-  --base-color: #080e18;
-  --base-variant: #0b0f1c;
+  --base-color: hsl(0, 0%, 5%);
+  --base-color-translucent: hsla(0, 0%, 5%, 0.3);
+  --base-variant: hsl(0, 0%, 20%);
   --text-color: #f8f4e9;
   --secondary-text: hsl(174, 83%, 80%);
   --primary-color: hsl(173, 80%, 30%);
