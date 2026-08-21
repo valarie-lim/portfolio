@@ -37,7 +37,7 @@ function Projects() {
                   <div className="btn-container">
                     {project.demo && (
                       <a href={project.demo} className="btn btn-primary">
-                        Live Demo
+                        Live Demo/Download
                       </a>
                     )}
 

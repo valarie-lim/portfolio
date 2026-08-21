@@ -63,5 +63,43 @@
     ],
     "demo": "https://valarie-lim.github.io/my-restaurant/",
     "github": "https://github.com/valarie-lim/my-restaurant"
-  }
+  },
+{
+  "id": 5,
+  "image": "/assets/p05-smart-retail-system.png",
+  "name": "🛒 Smart Retail Management System",
+  "type": "Console-Based Application",
+  "desc": "A console-based retail management system developed in Java using Object-Oriented Programming principles.",
+  "stack": ["Java", "OOP", "IntelliJ IDEA", "Git", "GitHub"],
+  "highlights": [
+    "Staff & Customer Authentication",
+    "Product & Customer Management",
+    "Shopping Cart & Checkout",
+    "Transaction & Receipt Management",
+    "CRUD Operations",
+    "Input Validation & Error Handling"
+  ],
+  "demo": "https://github.com/valarie-lim/smart-retail-management/raw/refs/heads/main/SmartRetail.zip",
+  "github": "https://github.com/valarie-lim/smart-retail-management"
+},
+{
+  "id": 6,
+  "image": "/assets/p06-employee-record-system.png",
+  "name": "👨‍💼 Employee Record System",
+  "type": "Console-Based Application",
+  "desc": "A console-based employee record management system developed in C++ with file handling using fstream to store and manage employee records.",
+  "stack": ["C++", "fstream", "Visual Studio"],
+  "highlights": [
+    "Add Employee Records",
+    "Search Employee Records",
+    "Update Employee Information",
+    "Delete Employee Records",
+    "Display All Employee Records",
+    "File-Based Data Storage",
+    "Menu-Driven Console Interface",
+    "Input Validation"
+  ],
+  "demo": "https://github.com/valarie-lim/employee-record-system/raw/refs/heads/main/EmployeeRecordSystem.zip",
+  "github": "https://github.com/valarie-lim/employee-record-system"
+}
 ]

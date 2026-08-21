@@ -16,8 +16,8 @@ function Hero() {
           <h2>Junior Full-Stack Web Developer</h2>
           <p>
             Passionate about creating responsive and user-focused web applications. Experienced with ASP.NET, React,
-            Vite, Next.js, MERN stack, JavaScript, SQL Server, HTML/CSS, and WordPress. Currently seeking a Junior Web
-            Developer or Software Developer role.
+            Vite, Next.js, JavaScript, SQL Server, HTML/CSS, and WordPress. Currently seeking a Junior Web Developer or
+            Software Developer role.
           </p>
           <div className="btn-container">
             <a href="#projects" className="btn btn-secondary">
