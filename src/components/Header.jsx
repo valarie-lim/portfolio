@@ -5,7 +5,7 @@ import ThemeSwitch from "./ThemeSwitch.jsx";
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeHash, setActiveHash] = useState("#about");
+  const [activeHash, setActiveHash] = useState("#");
 
   // 1. Handle background blur/shrink on scroll
   useEffect(() => {
