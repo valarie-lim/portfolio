@@ -15,7 +15,7 @@ Software Engineering Student | Full-Stack Web Developer | UI/UX Enthusiast
 ---
 
 ### 💼 About Me
-* 🎓 Pursuing a Diploma in IT, seeking a **Junior Software/Web Developer** role or internship.
+* 🎓 Pursuing a Diploma in IT, seeking a **Junior Web/Frontend/Software Developer** role.
 * 🛡️ Focused on **secure coding practices**, database management, and cloud deployment.
 * 🍰 Former professional baker, bringing strong attention to detail and creative problem-solving to tech.
 
@@ -23,7 +23,7 @@ Software Engineering Student | Full-Stack Web Developer | UI/UX Enthusiast
 
 ### 🛠️ Tech Stack
 
-* **Languages & Web:** Java, VB.NET, C++, JavaScript, HTML5, CSS3, React, Next.js  
+* **Frameworks & Language:** React, Next.js, JavaScript, HTML5, CSS3, Java, VB.NET, C++
 * **Backend & DB:** ASP.NET Web Forms, WordPress, MS SQL Server, SQL  
 * **Cloud & Tools:** Azure, MonsterASP.NET, GitHub Pages, Git, VS Code, Visual Studio, Figma  
 
@@ -32,6 +32,8 @@ Software Engineering Student | Full-Stack Web Developer | UI/UX Enthusiast
 ---
 
 ### 🌟 Featured Projects
+* **🌐 [Personal Portfolio Website](https://github.com/valarie-lim/portfolio)** | *React, Vite, JavaScript, HTML/CSS, JSON, LocalStorage*
+  * Built with React and deployed to Vercel to showcase my projects, technical skills, and professional background. ([Live Demo](https://valarie-lim.vercel.app))
 
 * **⛪ [Sunday School Management System](https://github.com/valarie-lim/sunday-school-management-system)** | *ASP.NET, VB.NET, SQL Server*
   * Capstone DBMS featuring RBAC, SHA-256 password hashing, report generation, and SSL cloud deployment. ([Live Demo](https://bem-sun-sch.runasp.net/))
@@ -46,10 +48,7 @@ Software Engineering Student | Full-Stack Web Developer | UI/UX Enthusiast
 
 ---
 
-### Other Projects  
-
-* **🌐 Personal Portfolio Website: Built with React and deployed to Vercel to showcase my projects, technical skills, and professional background.  
-🔗 [valarie-lim.vercel.app](https://valarie-lim.vercel.app)  
+### Other Projects
 * **🍰 Baking E-Commerce Website: WooCommerce-powered online bakery featuring product catalogues and ordering workflow.  
 🔗 https://mybakingworld.co  
 * **🏨 Hotel Booking System: Hotel reservation website built with WordPress, Elementor, and MotoPress Hotel Booking.  
@@ -65,7 +64,7 @@ Software Engineering • Object-Oriented Programming (OOP) • Database Design �
 ---
 
 ### 🎯 Currently Focusing On
-Data Structures & Algorithms • Advanced React/Next.js • Clean Code & System Architecture
+Data Structures & Algorithms • Advanced Javascript, React & Next.js • Clean Code & System Architecture
 
 ---
 
