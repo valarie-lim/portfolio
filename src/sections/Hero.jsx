@@ -23,7 +23,13 @@ function Hero() {
             <a href="#projects" className="btn btn-secondary">
               View Projects
             </a>
-            <a href="#" className="btn btn-primary" target="_blank" rel="noopener noreferrer" download>
+            <a
+              href="https://github.com/valarie-lim/portfolio/raw/main/resume-valarie-lim-yee-hang.pdf"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Download Resume
             </a>
           </div>
