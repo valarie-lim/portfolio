@@ -29,9 +29,16 @@ function About() {
           <h3>Professional Summary</h3>
           <ul>
             <li>Diploma in Information Technology student at INTI International University.</li>
-            <li>Build responsive web applications using ASP.NET, SQL Server, HTML, CSS, JavaScript, and WordPress.</li>
+            <li>
+              Experienced in building responsive web applications using ASP.NET, SQL Server, HTML, CSS, JavaScript, and
+              WordPress.
+            </li>
+            <li>Possess hands-on experience creating projects with React, Vite, Next.js, and Tailwind CSS.</li>
             <li>Passionate about writing clean, maintainable code and solving real-world problems.</li>
-            <li>Currently seeking a Junior Web Developer opportunity.</li>
+            <li>
+              Actively learning advanced JavaScript, modern frontend frameworks, and the MERN stack for full-stack
+              development.
+            </li>
           </ul>
         </div>
         <div className="column-right animation">
