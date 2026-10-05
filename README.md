@@ -4,7 +4,7 @@
 
 <p align="center">
 Diploma in Information Technology Student <br>
-Software Engineering Student | Full-Stack Web Developer | UI/UX Enthusiast
+Junior Web Developer | UI/UX Enthusiast
 </p>
 
 <p align="center">
