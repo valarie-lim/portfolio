@@ -8,7 +8,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px 0.5px var(--base-variant);
   transition: all 0.5s ease;
-  background: radial-gradient(circle at bottom right, var(--primary-color) 30%, var(--base-color) 50%);
+  background: radial-gradient(circle at bottom right, var(--accent-color) 30%, var(--base-color) 50%);
 
   .card-header {
     width: 100%;
@@ -40,6 +40,9 @@
       font-size: 2rem;
       line-height: 2;
     }
+    h4 {
+      margin-top: 1rem;
+    }
   }
   .right-column {
     flex: 1;
@@ -69,7 +72,7 @@
   p {
     padding: 5px;
     margin: 0;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     border-radius: 50px;
     border: 1px solid var(--accent-color);
     text-align: center;
@@ -77,8 +80,8 @@
     font-weight: 600;
 
     &:hover {
-      background-color: var(--text-color);
-      color: var(--base-color);
+      background-color: var(--base-color);
+      color: var(--primary-text);
     }
   }
 }

@@ -42,7 +42,7 @@ function Projects() {
                     )}
 
                     {project.github && (
-                      <a href={project.github} className="btn btn-primary">
+                      <a href={project.github} className="btn btn-secondary">
                         Github
                       </a>
                     )}

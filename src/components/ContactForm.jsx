@@ -34,7 +34,7 @@ function ContactForm() {
       <input
         type="email"
         id="email"
-        placeholder="your@email.com"
+        placeholder="yourname@email.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       ></input>
@@ -43,7 +43,7 @@ function ContactForm() {
         required
         id="message"
         rows="3"
-        placeholder="Tell me about your opportunity..."
+        placeholder="Tell me about the opportunity..."
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>

@@ -11,13 +11,13 @@ function Education() {
           My educational background combines formal IT studies with hands-on professional training in web development
           and digital technologies.
         </p>
-        <div className="two-column-card">
-          <div className="tc-card">
+        <div className="row-card-container">
+          <div className="row-card">
             <h3>
               <span>🎓</span>Diploma in Information Technology
             </h3>
             <h4>INTI International University</h4>
-            <p>Expected Graduation: November 2026</p>
+            <p>Expected Graduation: January 2027</p>
             <h4>Key Areas of Study</h4>
             <ul>
               <li>Software Development</li>
@@ -29,13 +29,13 @@ function Education() {
               <li>Human-Computer Interaction</li>
             </ul>
           </div>
-          <div className="tc-card">
+          <div className="row-card">
             <h3>
               <span>🚀</span>Professional Development
             </h3>
             <h4>Woodpecker Academy</h4>
             <p>Web Development & Digital Marketing Training</p>
-            <h4>Hands-on Training Covering </h4>
+            <h4>Hands-on Training Covering</h4>
             <ul>
               <li>Responsive Web Design</li>
               <li>Domain & Web Hosting Management</li>
@@ -44,6 +44,21 @@ function Education() {
               <li>WordPress Website Development</li>
               <li>E-commerce Store Setup</li>
               <li>Payment Gateway Integration</li>
+            </ul>
+          </div>
+          <div className="row-card">
+            <h3>
+              <span>⌨️</span>JavaScript Certification
+            </h3>
+            <h4>freeCodeCamp</h4>
+            <p>In Progress (Currently studying: DSA)</p>
+            <h4>Key Areas of Study</h4>
+            <ul>
+              <li>Core JavaScript programming concepts</li>
+              <li>DOM manipulation and event handling</li>
+              <li>Asynchronous & functional programming</li>
+              <li>Accessibility best practices</li>
+              <li>5 certification projects + final exam required</li>
             </ul>
           </div>
         </div>

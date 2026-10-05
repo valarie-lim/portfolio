@@ -13,11 +13,11 @@ function Hero() {
             Hello, I'm <br />
             <span>Valarie Lim</span>
           </h1>
-          <h2>Junior Full-Stack Web Developer</h2>
+          <h2>Junior Frontend Developer</h2>
           <p>
-            Passionate about creating responsive and user-focused web applications. Experienced with ASP.NET, React,
-            Vite, Next.js, JavaScript, SQL Server, HTML/CSS, and WordPress. Currently seeking a Junior Web Developer or
-            Software Developer role.
+            Passionate about creating responsive and user-focused web applications. Experienced with ASP.NET, SQL
+            Server, HTML/CSS, and WordPress, with hands-on experience building projects using JavaScript, React, Vite,
+            Next.js, and Tailwind CSS. Currently seeking opportunities to grow as a Junior Frontend Developer.
           </p>
           <div className="btn-container">
             <a href="#projects" className="btn btn-secondary">

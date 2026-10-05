@@ -11,7 +11,7 @@
 .skills-card {
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 15px 0.5px var(--base-variant);
   border-radius: 10px;
   padding: 2em;
   width: 100%;
@@ -32,7 +32,8 @@
     margin: 1rem auto;
   }
   p {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--primary-text);
     border: 1px solid var(--accent-color);
     width: auto;
     border-radius: 50px;
@@ -43,7 +44,7 @@
     cursor: crosshair;
 
     &:hover {
-      background-color: var(--accent-color);
+      background-color: var(--base-color);
       font-weight: bold;
     }
   }

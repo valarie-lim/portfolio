@@ -1,33 +1,45 @@
-#theme-switch {
-  width: 50px;
-  height: 50px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
-  border-radius: 50%;
-  border: 0 solid var(--accent-color);
-  background-color: var(--base-color);
+}
+
+.theme-switcher {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.pill-switch {
+  width: 80px;
+  height: 40px;
+  padding: 0;
+  border-radius: 34px;
+  background-color: var(--base-variant);
   cursor: pointer;
-
-  &:hover {
-    background-color: var(--base-variant);
-    transition: scale(1.1);
-  }
+  position: relative;
+  transition: background-color 0.3s ease;
 }
-
-#theme-switch svg {
-  fill: var(--accent-color);
+.pill-knob {
+  width: 35px;
+  height: 35px;
+  background-color: var(--primary-color);
+  color: var(--secondary-text);
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#theme-switch svg:last-child {
-  display: none;
+.pill-switch.active {
+  background-color: var(--accent-color);
 }
-
-.darkmode #theme-switch svg:first-child {
-  display: none;
-}
-
-.darkmode #theme-switch svg:last-child {
-  display: block;
+.pill-switch.active .pill-knob {
+  transform: translateX(37px);
 }

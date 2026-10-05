@@ -1,5 +1,6 @@
 #backToTop {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-text);
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -23,12 +24,13 @@
     visibility: visible;
   }
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--base-color);
+    color: var(--primary-text);
+    border: 1px solid var(--primary-color);
     box-shadow: 0 0 5px var(--base-variant);
   }
   i {
     font-size: 2rem;
-    color: var(--text-color);
   }
 }
 
