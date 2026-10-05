@@ -3,7 +3,9 @@ import "./ThemeSwitch.css";
 import "../index.css";
 
 function ThemeSwitch() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem("darkmode") === "active";
+  });
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -12,8 +14,10 @@ function ThemeSwitch() {
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("darkmode");
+      localStorage.setItem("darkmode", "active");
     } else {
       document.body.classList.remove("darkmode");
+      localStorage.setItem("darkmode", "inactive");
     }
   }, [isDarkMode]);
 
