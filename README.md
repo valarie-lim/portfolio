@@ -48,7 +48,7 @@ Junior Web Developer | UI/UX Enthusiast
 
 ---
 
-### Other Projects
+### Other Projects (Wordpress)
 * **🍰 Baking E-Commerce Website: WooCommerce-powered online bakery featuring product catalogues and ordering workflow.  
 🔗 https://mybakingworld.co  
 * **🏨 Hotel Booking System: Hotel reservation website built with WordPress, Elementor, and MotoPress Hotel Booking.  
