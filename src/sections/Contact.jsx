@@ -14,8 +14,8 @@ function Contact() {
         <div className="column-left">
           <h3>Get in Touch</h3>
           <p>
-            I'm currently seeking opportunities to begin my career as a Junior Frontend Developer. If you have an
-            opening or would like to discuss a potential opportunity, I'd be happy to hear from you.
+            I'm currently seeking opportunities to begin my career as a Junior Frontend Developer or Industrial Trainee.
+            If you have an opening or would like to discuss a potential opportunity, I'd be happy to hear from you.
           </p>
           <div className="contact-card">
             <a href="mailto:vallimyh92@gmail.com">

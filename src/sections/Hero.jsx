@@ -17,7 +17,8 @@ function Hero() {
           <p>
             Passionate about creating responsive and user-focused web applications. Experienced with ASP.NET, SQL
             Server, HTML/CSS, and WordPress, with hands-on experience building projects using JavaScript, React, Vite,
-            Next.js, and Tailwind CSS. Currently seeking opportunities to grow as a Junior Frontend Developer.
+            Next.js, and Tailwind CSS. Currently seeking opportunities to grow as a Junior Frontend Developer or
+            Industrial Trainee.
           </p>
           <div className="btn-container">
             <a href="#projects" className="btn btn-secondary">
