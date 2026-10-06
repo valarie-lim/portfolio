@@ -1,74 +1,189 @@
-![Profile view counter on GitHub](https://komarev.com/ghpvc/?username=valarie-lim)  
+# My Portfolio
+![Framework](https://img.shields.io/badge/Framework-React-blue)
+![Build Tool](https://img.shields.io/badge/Build%20Tool-Vite-purple)
+![Language](https://img.shields.io/badge/Language-JavaScript-yellow)
+![Data](https://img.shields.io/badge/Data-JSON-orange)
+![Storage](https://img.shields.io/badge/Storage-Web%20Storage%20API-green)
 
-<h1 align="center">Hi 👋, I'm Valarie Lim</h1>
+A personal portfolio website created to showcase my background, skills, projects, and experience as a Diploma in Information Technology student and junior web developer.
 
-<p align="center">
-Diploma in Information Technology Student <br>
-Junior Web Developer | UI/UX Enthusiast
-</p>
+The website was developed using React and Vite with responsive design.
 
-<p align="center">
-<a href="mailto:vallimyh92@gmail.com">Email</a> |
-  <a href="https://valarie-lim.vercel.app">Portfolio</a>
-</p>
-
----
-
-### 💼 About Me
-* 🎓 Pursuing a Diploma in IT, seeking a **Junior Web/Frontend/Software Developer** role.
-* 🛡️ Focused on **secure coding practices**, database management, and cloud deployment.
-* 🍰 Former professional baker, bringing strong attention to detail and creative problem-solving to tech.
+Live Demo  
+https://valarie-lim.vercel.app
 
 ---
 
-### 🛠️ Tech Stack
-
-* **Frameworks & Language:** React, Next.js, JavaScript, HTML5, CSS3, Java, VB.NET, C++
-* **Backend & DB:** ASP.NET Web Forms, WordPress, MS SQL Server, SQL  
-* **Cloud & Tools:** Azure, MonsterASP.NET, GitHub Pages, Git, VS Code, Visual Studio, Figma  
-
-> Most of my frontend projects are built using **Vanilla CSS** to strengthen my understanding of CSS fundamentals. I'm also familiar with **Bootstrap** and **Tailwind CSS** concepts and can quickly adapt to these frameworks when required.  
+## Website Preview
+![Light Theme](screenshots/light-theme.png)
+![Dark Theme](screenshots/dark-theme.png)
 
 ---
 
-### 🌟 Featured Projects
-* **🌐 [Personal Portfolio Website](https://github.com/valarie-lim/portfolio)** | *React, Vite, JavaScript, HTML/CSS, JSON, LocalStorage*
-  * Built with React and deployed to Vercel to showcase my projects, technical skills, and professional background. ([Live Demo](https://valarie-lim.vercel.app))
+## Project Overview 
+This portfolio website was developed as a personal website to introduce myself and showcase my work as a junior web developer. 
+The website provides information about my: 
+- Personal introduction 
+- Education background 
+- Technical skills 
+- Projects 
+- Web development experience 
+- Contact information 
 
-* **⛪ [Sunday School Management System](https://github.com/valarie-lim/sunday-school-management-system)** | *ASP.NET, VB.NET, SQL Server*
-  * Capstone DBMS featuring RBAC, SHA-256 password hashing, report generation, and SSL cloud deployment. ([Live Demo](https://bem-sun-sch.runasp.net/))
-
-* **🏦 [Internet Banking System](https://github.com/valarie-lim/internet-banking-system)** | *ASP.NET, Azure, MonsterASP.NET*
-  * RAD web app with account lock protection, email recovery, and secure customer registration. ([Live Demo](https://ckvsystem.runasp.net/))
-
-* **🍽️ [Sampan House Website Proposal](https://github.com/valarie-lim/sampan.house)** | *Next.js, React, Responsive Web*
-  * Freelance proposal featuring interactive booking forms, WhatsApp integration, and SEO optimization. ([Live Demo](https://sampan-house.vercel.app/))
-
-> 📌 *View my complete showcase, console tools, and CMS builds on my **[Portfolio Website](https://valarie-lim.vercel.app)**.*  
+The main goal of this project is to create a simple online portfolio that can be shared with potential employers, lecturers, or other people interested in my work.
 
 ---
 
-### Other Projects (Wordpress)
-* **🍰 Baking E-Commerce Website: WooCommerce-powered online bakery featuring product catalogues and ordering workflow.  
-🔗 https://mybakingworld.co  
-* **🏨 Hotel Booking System: Hotel reservation website built with WordPress, Elementor, and MotoPress Hotel Booking.  
-🔗 https://hotel.valarie-lim.com  
-* **🎓 Learning Management System: Online learning platform built using WordPress, Elementor, and Tutor LMS.  
-🔗 https://academy.valarie-lim.com  
+## Key Features
+- Personal introduction section
+- About me section
+- Technical skills section
+- Project showcase
+- Contact information
+- Responsive website layout
+- Simple navigation between sections
+- Clean and user-friendly interface
 
 ---
 
-# 🚀 Skills Demonstrated  
-Software Engineering • Object-Oriented Programming (OOP) • Database Design • SQL Development • Authentication & Authorization • CRUD Application Development • Responsive Web Development • React & Next.js Development • ASP.NET Web Development • Cloud Deployment • UI / UX Design • Git Version Control • SEO Fundamentals  
+## Technologies Used
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+
+### Data & Storage
+- JSON
+- Web Storage API
+- localStorage
+
+### Development Tools
+- Vite
+- Visual Studio Code
+- Git
+- GitHub
+
+### Deployment
+- Vercel
 
 ---
 
-### 🎯 Currently Focusing On
-Data Structures & Algorithms • Advanced Javascript, React & Next.js • Clean Code & System Architecture
+## Project Structure
+The project follows a basic React project structure.
+```text
+portfolio/ 
+│ 
+├── public/ 
+│ 
+├── src/ 
+│   ├── assets/ 
+│   │ 
+│   ├── components/ 
+│   │   ├── BackToTop.jsx 
+│   │   ├── ContactForm.jsx 
+│   │   ├── Footer.jsx 
+│   │   ├── Header.jsx 
+│   │   └── ThemeSwitch.jsx 
+│   │ 
+│   ├── data/ 
+│   │   └── projects.json 
+│   │  
+│   ├── sections/ 
+│   │   ├── About.jsx 
+│   │   ├── Contact.jsx 
+│   │   ├── Education.jsx 
+│   │   ├── Hero.jsx 
+│   │   ├── Projects.jsx 
+│   │   └── Skills.jsx 
+│   │ 
+│   ├── App.jsx 
+│   ├── main.jsx 
+│   └── index.css 
+│ 
+├── .gitignore 
+├── index.html 
+├── package.json 
+├── package-lock.json 
+└── vite.config.js 
+```
+The src folder contains the main React application files. Components are separated into reusable UI components, while the sections folder contains the main sections of the portfolio website.
 
 ---
 
-# ⚡ Beyond Coding  
-Before transitioning into IT, I worked professionally in the baking industry, where I developed strong attention to detail, creativity, and problem-solving skills. These experiences continue to influence how I approach software development by building solutions that are both practical and user-focused.  
+## Development
+The project was created using Vite with React.
 
-I enjoy learning new technologies, improving my development practices, and continuously challenging myself through real-world projects.  
+To run the project locally, clone the repository and install the required packages.
+
+1. Clone the Repository
+git clone https://github.com/valarie-lim/portfolio
+2. Open the Project Folder
+cd portfolio
+3. Install Dependencies
+npm install
+4. Start the Development Server
+npm run dev
+
+The website will then be available on the local development server provided by Vite.
+---
+
+## Build for Production
+To create a production build:
+npm run build
+
+The generated files can then be deployed to a hosting platform such as Vercel.
+---
+
+## Deployment
+The portfolio website is deployed using Vercel.
+
+Vercel provides hosting for the React application and allows the website to be accessed through the internet.
+
+Live Website 
+https://valarie-lim.vercel.app/
+
+---
+
+## Responsive Design
+The website is designed to work on different screen sizes, including:
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+Responsive styling helps make the website easier to use on different devices.
+
+---
+
+## What I Learned
+Through this project, I gained practical experience in:
+- Creating a website using React
+- Using Vite for frontend development
+- Creating and organizing React components
+- Working with JavaScript
+- Designing webpages using CSS
+- Creating responsive layouts
+- Creating light and dark themes
+- Using the Web Storage API and localStorage to store user theme preferences
+- Using JSON to store project information
+- Making project information easier to modify using JSON
+- Managing a project using Git and GitHub
+- Deploying a website using Vercel
+- Building a personal portfolio for job applications
+
+---
+
+## Future Improvements
+Some possible improvements for the portfolio include:
+- Add more projects
+- Improve animations and interactions
+- Add a contact form with database integration
+- Add more interactive features
+- Continue improving the website design and user experience
+
+---
+
+## Author
+Valarie Lim  
+Diploma in Information Technology
