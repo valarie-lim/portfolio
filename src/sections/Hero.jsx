@@ -1,4 +1,4 @@
-import myImg from "/assets/valarie-portfolio.png";
+import myImg from "/assets/valarie-portfolio.webp";
 import "./Hero.css";
 
 function Hero() {
