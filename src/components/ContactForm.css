@@ -14,7 +14,8 @@ form {
   textarea {
     border: 2px solid var(--base-variant);
     border-radius: 5px;
-    background-color: transparent;
+    background-color: var(--base-color);
+    color: var(--primary-text);
     padding: 0.5em 3.25em 0.5em 1.25em;
     margin-bottom: 0.5em;
     font-size: 1.15rem;
