@@ -51,7 +51,7 @@ function Education() {
               <span>⌨️</span>JavaScript Certification
             </h3>
             <h4>freeCodeCamp</h4>
-            <p>In Progress (Currently studying: DSA)</p>
+            <p>In Progress</p>
             <h4>Key Areas of Study</h4>
             <ul>
               <li>Core JavaScript programming concepts</li>
