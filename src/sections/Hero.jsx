@@ -25,7 +25,7 @@ function Hero() {
               View Projects
             </a>
             <a
-              href="https://github.com/valarie-lim/portfolio/raw/main/resume-valarie-lim-yee-hang.pdf"
+              href="https://github.com/valarie-lim/portfolio/raw/main/valarie-lim-yee-hang-resume-intern.pdf"
               className="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
