@@ -1,5 +1,24 @@
 import "./Skills.css";
 
+const skillsData = [
+  {
+    category: "Frontend Development",
+    list: ["HTML5", "CSS3 (Vanilla CSS)", "JavaScript", "React", "Next.js", "Responsive Design"],
+  },
+  {
+    category: "Backend Development",
+    list: ["ASP.NET Web Forms", "Java", "c++", "VB.NET", "MS SQL Server", "SQL"],
+  },
+  {
+    category: "Development Tools",
+    list: ["Git", "Github", "Visual Studio", "VS Code", "Azure", "Vercel", "Netlify", "SSMS", "IntelliJ IDEA"],
+  },
+  {
+    category: "Design & CMS",
+    list: ["Figma", "Canva", "WordPress", "Elementor", "WooCommerce", "Webflow", "Shopify", "ClickFunnels"],
+  },
+];
+
 function Skills() {
   return (
     <section id="skills">
@@ -9,53 +28,17 @@ function Skills() {
         <hr></hr>
         <p>The technologies and tools I use to build responsive, scalable, and user-friendly web applications.</p>
         <div className="skills-card-wrapper">
-          <div className="skills-card">
-            <h3>Frontend Development</h3>
-            <div className="skills-card-pill-container">
-              <p>HTML5</p>
-              <p>CSS3 (Vanilla CSS)</p>
-              <p>JavaScript</p>
-              <p>React</p>
-              <p>Next.js</p>
-              <p>Responsive Design</p>
+          {skillsData.map((skill) => (
+            <div className="skills-card" key={skill.category}>
+              <h3>{skill.category}</h3>
+
+              <div className="skills-card-pill-container">
+                {skill.list.map((item, index) => (
+                  <p key={`${skill.category}-${index}`}>{item}</p>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="skills-card">
-            <h3>Backend Development</h3>
-            <div className="skills-card-pill-container">
-              <p>ASP.NET Web Forms</p>
-              <p>Java</p>
-              <p>C++</p>
-              <p>VB.NET</p>
-              <p>MS SQL Server</p>
-              <p>SQL</p>
-            </div>
-          </div>
-          <div className="skills-card">
-            <h3>Development Tools</h3>
-            <div className="skills-card-pill-container">
-              <p>Git</p>
-              <p>Github</p>
-              <p>Visual Studio</p>
-              <p>VS Code</p>
-              <p>Azure</p>
-              <p>Vercel</p>
-              <p>SSMS</p>
-              <p>IntelliJ IDEA</p>
-            </div>
-          </div>
-          <div className="skills-card">
-            <h3>Design & CMS</h3>
-            <div className="skills-card-pill-container">
-              <p>Figma</p>
-              <p>Canva</p>
-              <p>WordPress</p>
-              <p>Elementor</p>
-              <p>WooCommerce</p>
-              <p>Webflow</p>
-              <p>ClickFunnels</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
