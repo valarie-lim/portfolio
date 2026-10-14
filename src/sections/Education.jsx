@@ -1,5 +1,57 @@
 import "./Education.css";
 
+const educationData = [
+  {
+    icon: "🎓",
+    qualification: "Diploma in Information Technology",
+    institute: "INTI International University",
+    status: "Expected Graduation: January 2027",
+    about: "Information Technology & Systems Development Training",
+    desc: "Key Areas of Study:",
+    studyArea: [
+      "Programming Fundamentals",
+      "Object-Oriented Programming",
+      "Rapid Application Development",
+      "Database Management Systems",
+      "System Analysis & Design",
+      "Data Structures & Algorithms",
+      "Human-Computer Interaction",
+    ],
+  },
+  {
+    icon: "🚀",
+    qualification: "Professional Development",
+    institute: "Woodpecker Academy",
+    status: "Ongoing learning since Dec 2024",
+    about: "Web Development & Digital Marketing Training",
+    desc: "Hands-on Training Covering:",
+    studyArea: [
+      "Responsive Web Design",
+      "Domain & Web Hosting Management",
+      "Search Engine Optimization (SEO)",
+      "Google Search Console",
+      "WordPress Website Development",
+      "E-commerce Store Setup",
+      "Payment Gateway Integration",
+    ],
+  },
+  {
+    icon: "⌨️",
+    qualification: "JavaScript Certification",
+    institute: "freeCodeCamp.org",
+    status: "Learning In Progress",
+    about: "Core JavaScript Programming & DOM Manipulation Training",
+    desc: "Core Topics Include:",
+    studyArea: [
+      "Core JavaScript programming concepts",
+      "DOM manipulation and event handling",
+      "Asynchronous & functional programming",
+      "Accessibility best practices",
+      "5 certification projects + final exam required",
+    ],
+  },
+];
+
 function Education() {
   return (
     <section id="education">
@@ -12,55 +64,24 @@ function Education() {
           and digital technologies.
         </p>
         <div className="row-card-container">
-          <div className="row-card">
-            <h3>
-              <span>🎓</span>Diploma in Information Technology
-            </h3>
-            <h4>INTI International University</h4>
-            <p>Expected Graduation: January 2027</p>
-            <h4>Key Areas of Study</h4>
-            <ul>
-              <li>Software Development</li>
-              <li>Web Application Development</li>
-              <li>Database Systems</li>
-              <li>System Analysis & Design</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Object-Oriented Programming</li>
-              <li>Human-Computer Interaction</li>
-            </ul>
-          </div>
-          <div className="row-card">
-            <h3>
-              <span>🚀</span>Professional Development
-            </h3>
-            <h4>Woodpecker Academy</h4>
-            <p>Web Development & Digital Marketing Training</p>
-            <h4>Hands-on Training Covering</h4>
-            <ul>
-              <li>Responsive Web Design</li>
-              <li>Domain & Web Hosting Management</li>
-              <li>Search Engine Optimization (SEO)</li>
-              <li>Google Search Console</li>
-              <li>WordPress Website Development</li>
-              <li>E-commerce Store Setup</li>
-              <li>Payment Gateway Integration</li>
-            </ul>
-          </div>
-          <div className="row-card">
-            <h3>
-              <span>⌨️</span>JavaScript Certification
-            </h3>
-            <h4>freeCodeCamp</h4>
-            <p>In Progress</p>
-            <h4>Key Areas of Study</h4>
-            <ul>
-              <li>Core JavaScript programming concepts</li>
-              <li>DOM manipulation and event handling</li>
-              <li>Asynchronous & functional programming</li>
-              <li>Accessibility best practices</li>
-              <li>5 certification projects + final exam required</li>
-            </ul>
-          </div>
+          {educationData.map((edulist) => (
+            <div className="row-card" key={edulist.qualification}>
+              <h3>
+                <span>{edulist.icon}</span>
+                {edulist.qualification}
+              </h3>
+              <h4>{edulist.institute}</h4>
+              <p>{edulist.status}</p>
+              <h4>{edulist.about}</h4>
+              <br />
+              <h5>{edulist.desc}</h5>
+              <ul>
+                {edulist.studyArea.map((item, index) => (
+                  <li key={`${edulist.qualification}-${index}`}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
