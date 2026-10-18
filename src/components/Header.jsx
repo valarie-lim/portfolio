@@ -73,7 +73,7 @@ function Header() {
     <header id="header" className={isScrolled ? "scrolled" : ""}>
       <div className="nav-container">
         {/* Logo routes cleanly back to the absolute root home landing view */}
-        <Link to="/" className="logo" onClick={closeMenu}>
+        <Link to="/#" className="logo" onClick={closeMenu}>
           {SITE_CONFIG.authorName}
         </Link>
 

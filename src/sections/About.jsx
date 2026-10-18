@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Lottie from "../components/Lottie.jsx";
 import "./About.css";
 

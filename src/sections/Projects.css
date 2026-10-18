@@ -1,3 +1,7 @@
+#projects {
+  padding-top: 40px;
+}
+
 .projects-card {
   display: flex;
   flex-direction: column;
