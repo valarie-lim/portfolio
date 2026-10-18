@@ -8,11 +8,12 @@ import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import BlogFeed from "./components/BlogFeed.jsx";
 import BlogPostDetail from "./components/BlogPostDetail.jsx";
+import ScrollToHashElement from "./components/ScrollToHashElement";
 
 function App() {
   return (
     <Router>
-      {/* Header MUST sit inside Router to allow navigation links */}
+      <ScrollToHashElement />
       <Header />
 
       <Routes>

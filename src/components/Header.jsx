@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // 👈 Added standard router hooks
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import ThemeSwitch from "./ThemeSwitch.jsx";
 import { SITE_CONFIG } from "../config";
@@ -7,8 +7,9 @@ import { SITE_CONFIG } from "../config";
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
-  const location = useLocation(); // Tracks the current active page route path
+  const location = useLocation();
 
   // 1. Handle background blur/shrink on scroll
   useEffect(() => {
@@ -20,11 +21,52 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 2. IntersectionObserver to detect which section is currently on screen
+  useEffect(() => {
+    // Only track scroll sections if we are on the home page
+    if (location.pathname !== "/") {
+      setActiveSection("");
+      return;
+    }
+
+    const sectionIds = ["about", "projects", "skills", "education", "contact"];
+
+    const observerOptions = {
+      root: null, // viewport
+      rootMargin: "-20% 0px -60% 0px", // Triggers when section occupies the sweet spot of the screen
+      threshold: 0,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe each section element on the DOM
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [location.pathname]); // Re-run if we switch away/back to home page
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  // Helper function to determine if a link is active
+  const isSectionActive = (hash) => {
+    if (location.pathname !== "/") return false;
+    return activeSection === hash.replace("#", "");
   };
 
   return (
@@ -45,31 +87,30 @@ function Header() {
           {/* Backdrop overlay */}
           {isMenuOpen && <div className="nav-overlay" onClick={closeMenu}></div>}
 
-          {/* Section links prefixed with '/' to guarantee cross-page section anchor snaps */}
           <li>
-            <a href="/#about" onClick={closeMenu} className={location.hash === "#about" ? "active" : ""}>
+            <Link to="/#about" onClick={closeMenu} className={isSectionActive("#about") ? "active" : ""}>
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#projects" onClick={closeMenu} className={location.hash === "#projects" ? "active" : ""}>
+            <Link to="/#projects" onClick={closeMenu} className={isSectionActive("#projects") ? "active" : ""}>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#skills" onClick={closeMenu} className={location.hash === "#skills" ? "active" : ""}>
+            <Link to="/#skills" onClick={closeMenu} className={isSectionActive("#skills") ? "active" : ""}>
               Skills
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#education" onClick={closeMenu} className={location.hash === "#education" ? "active" : ""}>
+            <Link to="/#education" onClick={closeMenu} className={isSectionActive("#education") ? "active" : ""}>
               Education
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#contact" onClick={closeMenu} className={location.hash === "#contact" ? "active" : ""}>
+            <Link to="/#contact" onClick={closeMenu} className={isSectionActive("#contact") ? "active" : ""}>
               Contact
-            </a>
+            </Link>
           </li>
 
           {/* Standing direct Link route targets our dedicated standalone blog feed */}
