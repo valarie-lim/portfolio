@@ -7,7 +7,7 @@ author: ""
 image: "/images/blog-portfolio-screenshot.png"
 ---
 
-![Screenshot of my portfolio](../../images/blog-portfolio-screenshot.png)
+![Screenshot of my portfolio](../../images/blog-internD1-task-screenshot.png)
 
 Today was my very first day as an intern, and wow, it was definitely an eventful start!
 
