@@ -4,10 +4,10 @@ date: "2026-10-19"
 tagline: "Surviving my first day at an IT digital company when things didn't go exactly as planned."
 preview: "My first day didn't go perfectly smoothly, I couldn't log into my company laptop and my phone's Wi-Fi broke down. Here is how I stayed productive anyway."
 author: ""
-image: "/images/blog-internD1.png"
+image: "/images/blog-portfolio-screenshot.png"
 ---
 
-![Intern Day 1](../../images/blog-internD1.jpg)
+![Screenshot of my portfolio](../../images/blog-internD1-task-screenshot.png)
 
 Today was my very first day as an intern, and wow, it was definitely an eventful start!
 

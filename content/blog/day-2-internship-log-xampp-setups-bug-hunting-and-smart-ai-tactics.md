@@ -7,7 +7,7 @@ author: ""
 image: "/images/blog-internD2.png"
 ---
 
-![Intern Day 2](../../images/blog-internD2.png)
+![Local Dashboard Login Access Confirmation](../../images/blog-internD2-task-screenshot.png)
 
 Day 2 of my internship is officially wrapped up, and it was a massive step up in technical complexity! If Day 1 was all about personal onboarding and adapting to basic gear challenges, today was a deep dive into local server configuration, codebase architecture, and strategic development planning.
 
