@@ -4,7 +4,7 @@ date: "2026-10-20"
 tagline: "Wrestling with local server configurations, tracking down dynamic path errors, and designing a strategic AI pipeline."
 preview: "Day 2 got highly technical fast. I set up a local XAMPP environment, fought through Apache redirect loops, manually rebuilt missing databases, and mapped out an efficient multi-AI workflow."
 author: ""
-image: "/images/internship-day2-dashboard.png"
+image: "/images/blog-internD2.png"
 ---
 
 ![Intern Day 2](../../images/blog-internD2.png)

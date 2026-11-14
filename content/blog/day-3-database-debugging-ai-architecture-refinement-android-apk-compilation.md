@@ -4,7 +4,7 @@ date: "2026-10-21"
 tagline: "Fixing database inconsistencies, refining a multi-AI development workflow, and successfully compiling a mock Android APK."
 preview: "Day 3 was a major technical milestone. I resolved multiple SQL errors across the application, refined the project architecture through Claude and ChatGPT peer reviews, validated authentication for three user roles, and successfully compiled and launched a mock Android APK in the Android Studio emulator."
 author: ""
-image: "/images/internship-day3-dashboard.png"
+image: "/images/blog-internD3.png"
 ---
 
 ![Intern Day 3](../../images/blog-internD3.png)
